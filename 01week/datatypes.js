@@ -1,49 +1,73 @@
-// use const d to get the date 
-const d = new Date();
-alert (d); 
-// Number to string
-const num = 47
-console.log(num);
-console.log(num.toString);
+'use strict'
 
-// String to Number
+// Write a JavaScript program to display the current day and time.
+const todaysDate = new Date();
+ console.log(todaysDate);
 
-const text = '42px';
+// Write a JavaScript program to convert a number to a string.
+const num = 15
+const a = num.toString();
+  console.log(a);
+
+// Write a JavaScript program to convert a string to the number.
+const text = '30px';
 const integer = parseInt(text, 10);
+  console.log(integer);
 
-// Data types
+// Write a JavaScript program that takes in different datatypes and prints out whether they are a:
+// Boolean
+console.log(typeof true);
+// Null
+console.log(typeof null)
+// Undefined
+console.log(typeof declaredButUndefinedVariable);
 
-/* Bolean  Check if 7 is greater than 8 */
-7 > 8; // returns false
+// Number
+console.log(typeof 42);
 
-/* Check if a variable is equal to a string */
-var color = "Blue";
+// NaN
+const isNaN = () => value === NaN;
+  console.log(NaN);
 
-color === "Blue"; // returns true
+// String
+console.log(typeof 'hello');
 
-const x;               //  x is undefined
-x = 5;                //  x is a Number
-x = "John";          //  x is a String
-
+// Write a JavaScript program that adds 2 numbers together.
 const SumTwoNumbers=(num1, num2)=>{
   return num1 + num2
 };
 SumTwoNumbers(2, 2);
 
+// Write a JavaScript program that runs only when 2 things are true.
 const aﾠ = 1;
 const a = 2;
-if(aﾠ==1 && a== 2) {
+
+if(aﾠ == 1 && a == 2) {
     console.log("true")
 }
 
-var aﾠ = 1;
-var a = 2;
-if(aﾠ==1 && a!= 2) {
-    console.log("true")
-}
-var aﾠ = 1;
-var a = 2;
+// Write a JavaScript program that runs when 1 of 2 things are true.
+ const comp = ('Jay', null);
+ const comp1 = 'Jay';
+ const comp2 = null; 
 
-if(aﾠ!=1 && a!= 2) {
-    console.log("not true")
+function compare(comp1, comp2){
+if(comp1 && comp2) {
+        return 'true';
+    } else {
+        return 'not true';
+    }
+}  
+    console.log(comp);
+// Write a JavaScript program that runs when both things are not true.
+
+const x = 4
+const y = 1
+const z = 0
+
+function compare(x, y, z){
+if (x==4 && (!(y==1) || z==0)
+	    return 'true';
+    } else {
+     return 'not true';
 }
